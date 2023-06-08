@@ -13,3 +13,17 @@ $(".header__burgir").click(function () {
         }, 300);
     };
 });
+
+// modal
+$(".open-modal").click(function() {
+    $(".modal").addClass("active");
+    setTimeout(function() {
+        $(".modal").addClass("open");
+    }, 1);
+});
+$(".modal .close").click(function() {
+    $(".modal").removeClass("open");
+    setTimeout(function() {
+        $(".modal").removeClass("active");
+    }, 300);
+});
