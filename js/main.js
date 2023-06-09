@@ -27,3 +27,9 @@ $(".modal .close").click(function() {
         $(".modal").removeClass("active");
     }, 300);
 });
+$(".modal__close").click(function() {
+    $(".modal").removeClass("open");
+    setTimeout(function() {
+        $(".modal").removeClass("active");
+    }, 300);
+});
